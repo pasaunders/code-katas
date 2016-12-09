@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Virtual enviornment files
+bin/
+lib64
+pyvenv.cfg
+share/
