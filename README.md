@@ -34,3 +34,87 @@ Return the highest and lowest numbers in a list
         nn = [int(s) for s in numbers.split(" ")]
         return "%i %i" % (max(nn),min(nn))
 ```
+
+Test if club member is a senior
+    -module: open_or_senior.py
+    -tests: test_open_or_senior.py
+    -link: https://www.codewars.com/kata/categorize-new-member/train/python
+```python
+    def openOrSenior(data):
+        """This was the solution by taw. I was trying for this exact thing, but I couldn't get the and syntax working."""
+        return ["Senior" if age >= 55 and handicap >= 8 else "Open" for (age, handicap) in data]
+```
+
+Test if a number is even or odd
+    -module even_odd.py
+    -test test_even_odd.py
+    -link https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/python
+```python
+    def even_or_odd(number):
+    """laoris, colbydauph, gdude2002, Wynkth, ksolademi, ilgiz (plus 208 more warriors) came up with this solution."""
+  return 'Odd' if number % 2 else 'Even'
+```
+
+Remove the first and last char of a string.
+    -module remove_chars.py
+    -test test_remove_chars.py
+    -link https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/solutions/python
+```python
+    remove_char=lambda s: s[1:-1]
+    """GiacomoSorbi, suic, LazyWolf, lechevalier, sperry, Mikhail158 (plus 5 more warriors) came up with this solution."""
+```
+
+Remove the first and last char of a string.
+    -module opposite.py
+    -test test_opposite.py
+    -link https://www.codewars.com/kata/56dec885c54a926dcd001095/train/python
+```python
+    def opposite(number):
+        return -number
+    """CrazyMerlyn, ChristianECooper, Nuskeur, tigretoncio, VadimPopov, Django99 (plus 562 more warriors )came up with this solution."""
+```
+
+Remove the first and last char of a string.
+    -module next_square.py
+    -test test_next_square.py
+    -link https://www.codewars.com/kata/find-the-next-perfect-square/train/python
+```python
+    from math import sqrt
+    def find_next_square(sq):
+        return (sqrt(sq)+1)**2 if sqrt(sq)%1 == 0 else -1
+        """AndrewOsentoski, JustinDenk came up with this solution."""
+```
+
+Remove the first and last char of a string.
+    -module np_year.py
+    -test test_np_year.py
+    -link https://www.codewars.com/kata/growth-of-a-population/train/python
+```python
+    def nb_year(population, percent, aug, target):
+        """S666, MMMAAANNN came up with this solution."""
+        year = 0
+        while population < target:
+            population += population * percent / 100. + aug
+            year += 1
+        return year
+```
+
+Remove the first and last char of a string.
+    -module sheep.py
+    -test test_sheep.py
+    -link https://www.codewars.com/kata/counting-sheep-dot-dot-dot/train/python
+```python
+    def count_sheeps(arrayOfSheeps):
+        """jhoffner, mortonfox, zmoses, f331a, misuburlacu, MatthiasLenz (plus 376 more warriors) came up with this solution."""
+        return arrayOfSheeps.count(True)
+```
+
+Remove the first and last char of a string.
+    -module count.py
+    -test test_count.py
+    -link https://www.codewars.com/kata/vowel-count/train/python
+```python
+    def getCount(inputStr):
+    """javaafreak, ChingChangChong, hdang101, ronanodufaigh, rbordiya, alpharom came up with this solution."""
+        return sum(1 for let in inputStr if let in "aeiouAEIOU")
+```
