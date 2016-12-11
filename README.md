@@ -118,3 +118,12 @@ Remove the first and last char of a string.
     """javaafreak, ChingChangChong, hdang101, ronanodufaigh, rbordiya, alpharom came up with this solution."""
         return sum(1 for let in inputStr if let in "aeiouAEIOU")
 ```
+
+Generate sum and round to two decimal places a list of n items.
+    -module sum_terms.py
+    -test test_sum_terms.py
+    -link http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python
+```python
+    series_sum = lambda n: '{:.2f}'.format(sum(1.0/(3*i-2) for i in xrange(1, n+1)))
+    """tchar came up with this solution. I like the brevity."""
+```
