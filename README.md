@@ -1,4 +1,14 @@
 # code-katas
+
+Proper Parenthetics challenge code:
+    The idea is to record  the index numbers of each parenthetical, then compare them in pairs
+    by iterating through two queues. If the closing parentheical has a lower index than its paired
+    opening parenthetical, it's broken. If there are more opens than closes, it's open. If there
+    are more closes than opens, it's broken again. If there are exactly the same number, and the
+    opens always come first, they're balanced.
+
+
+
 Codewars practice code
 Katas completed and recorded in the following format:
   Do the Thing with the Stuff
