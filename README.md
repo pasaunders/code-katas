@@ -7,6 +7,11 @@ Proper Parenthetics challenge code:
     are more closes than opens, it's broken again. If there are exactly the same number, and the
     opens always come first, they're balanced.
 
+Sort Cards code:
+    I wanted to avoid looping through the list of cards more than once, so I built a dictonary with
+    keys for each card value, appended cards to lists tied to the appropriate keys, and then
+    concatenated the lists in the correct order. There's probably a dryer way to do it.
+
 
 
 Codewars practice code
