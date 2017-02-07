@@ -12,7 +12,7 @@ setup(
     license="MIT",
     py_modules=[''],
     package_dir={'': 'src'},
-    install_requires=['faker'],
+    install_requires=['faker', 'networkx'],
     extras_require={'test': ['pytest', 'pytest-watch', 'pytest-cov', 'tox']},
     entry_points={
         # 'console scripts': [
