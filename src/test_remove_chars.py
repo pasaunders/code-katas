@@ -1,6 +1,18 @@
-Test.describe("Tests")
-Test.assert_equals(remove_char('eloquent'), 'loquen')
-Test.assert_equals(remove_char('country'), 'ountr')
-Test.assert_equals(remove_char('person'), 'erso')
-Test.assert_equals(remove_char('place'), 'lac')
-Test.assert_equals(remove_char('ok'), '')
+"""Codewars tests parametrized and converted to pytest."""
+
+import pytest
+
+output_table = [
+    ['eloquent', 'loquen'],
+    ['country', 'ountr'],
+    ['person', 'erso'],
+    ['place', 'lac'],
+    ['ok', '']
+]
+
+
+@pytest.mark.parametrize('input, output', output_table)
+def test_remove(input, output):
+    """Test remove char function with specified inputs."""
+    from remove_chars import remove_char
+    assert remove_char(input) == output
