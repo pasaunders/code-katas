@@ -17,6 +17,7 @@ def test_kata(input, output):
     from gau import f
     assert f(input) == output
 
+
 @pytest.mark.parametrize('input, output', results_table)
 def test_one_line_kata(input, output):
     """Test that the function outputs exected results based on inputs."""
