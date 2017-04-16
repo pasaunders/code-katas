@@ -21,3 +21,4 @@ def queue_time_concise(customers, n):
         qn = sorted(qn)
         qn[0] += c
     return max(qn)
+    
