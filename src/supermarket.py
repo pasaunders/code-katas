@@ -13,3 +13,11 @@ def queue_time(customers, n):
             checkout.append(line[0])
             line.pop(0)
     return time
+
+
+def queue_time_concise(customers, n):
+    qn = [0] * n
+    for c in customers:
+        qn = sorted(qn)
+        qn[0] += c
+    return max(qn)
