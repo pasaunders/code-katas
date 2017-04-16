@@ -5,12 +5,11 @@ def queue_time(customers, n):
         return max(customers)
     line = customers[n:]
     checkout = customers[:n]
-    time = min(checkout)
-    while line:
-        import pdb; pdb.set_trace()
+    time = 0
+    while checkout:
+        time += min(checkout)
         checkout = [(x - min(checkout)) for x in checkout if (x - min(checkout) > 0)]
-        while len(checkout) < n:
+        while len(checkout) < n and line:
             checkout.append(line[0])
             line.pop(0)
-        time += min(checkout)
     return time
