@@ -3,11 +3,11 @@ module Kata where
 remove :: String -> String
 remove sentence
   |  head (reverse sentence) == '!' = init sentence
-  | otherwise = sentencemodule Kata where
+  | otherwise = sentence
 
 
 -- Of course there's a last builtin. Using this from now on.
-remove :: String -> String
-remove xs
+remove2 :: String -> String
+remove2 xs
   | last xs == '!' = init xs
   | otherwise = xs
